@@ -1,18 +1,17 @@
 # your_project/requirements.txt
-
-streamlit>=1.28.0
-pandas>=2.0.0
-numpy==1.23.5
-yfinance>=0.2.0
+streamlit
+pandas
+numpy
+yfinance
+scikit-learn
+requests
+tensorflow-cpu
+joblib
 ta>=0.10.0
-tensorflow==2.16.1
-scikit-learn>=1.4.0
 passlib[bcrypt]  # <--- CRITICAL FIX: Replaced simple bcrypt with passlib
-requests>=2.31.0
 plotly>=5.21.0
 mplfinance>=0.12.9b7
 python-dotenv>=1.0.0
-joblib>=1.3.0
 nltk>=3.8.1
 
 # For Testing
