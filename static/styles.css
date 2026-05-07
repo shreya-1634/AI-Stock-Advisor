@@ -1,0 +1,114 @@
+/* your_project/static/styles.css */
+
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #FAFAFA; /* Light text for dark theme */
+    background-color: #0E1117; /* Dark background */
+}
+
+/* Streamlit main container */
+.stApp {
+    background-color: #0E1117; /* Ensure main app background matches */
+}
+
+/* Sidebar styling */
+.st-emotion-cache-vk33gh { /* This class name can change with Streamlit updates. Inspect your app. */
+    background-color: #1A1A1A; /* Slightly lighter dark for sidebar */
+    color: #FAFAFA;
+    padding-top: 2rem;
+}
+.st-emotion-cache-cnbn9w { /* Sidebar width adjustment if needed */
+    width: 250px;
+}
+
+/* Titles and Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #2196F3; /* Primary blue for headers */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: #2196F3; /* Primary blue button */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+    color: white;
+}
+
+/* Text inputs and select boxes */
+.stTextInput>div>div>input,
+.stSelectbox>div>div>div {
+    background-color: #262730; /* Secondary dark background */
+    color: #FAFAFA;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+
+/* Message boxes (success, warning, error, info) */
+.st-emotion-cache-uf99v8 { /* Success */
+    background-color: #28a74533; /* Green with transparency */
+    border-left: 5px solid #28a745;
+}
+.st-emotion-cache-1f8x6q { /* Error */
+    background-color: #dc354533; /* Red with transparency */
+    border-left: 5px solid #dc3545;
+}
+.st-emotion-cache-1s33q9e { /* Warning */
+    background-color: #ffc10733; /* Yellow with transparency */
+    border-left: 5px solid #ffc107;
+}
+.st-emotion-cache-1i052u0 { /* Info */
+    background-color: #17a2b833; /* Blue with transparency */
+    border-left: 5px solid #17a2b8;
+}
+
+/* Markdown styling (for clickable news links etc.) */
+a {
+    color: #BBDEFB; /* Lighter blue for links */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Custom styling for specific elements, if needed */
+/* Example: Reduce top margin for the first element after a header */
+.block-container h3 + div {
+    margin-top: 0;
+}
+
+/* Adjust Streamlit specific containers for better spacing if needed */
+div[data-testid="stVerticalBlock"] > div:first-child {
+    padding-top: 0 !important;
+}
+
+/* Fix for plots background */
+.main .block-container {
+    background-color: #0E1117; /* Ensure plots align with main background */
+}
+
+/* Horizontal rule */
+hr {
+    border-top: 1px solid #444;
+}
+
+/* Specific styling for forms */
+.stForm {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #1C1C1C;
+    margin-bottom: 2rem;
+}
